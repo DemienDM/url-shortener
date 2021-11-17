@@ -18,8 +18,8 @@ export default class ApiService {
             setTimeout(() => {
                 const linkRow = {
                     id: 1,
-                    short_url: 'sdfsdfsfds',
-                    original_url: 'https://rozetka.com.ua/',
+                    short_url: 'erGT94',
+                    originalUrl: 'https://rozetka.com.ua/',
                 };
 
                 resolve(linkRow)

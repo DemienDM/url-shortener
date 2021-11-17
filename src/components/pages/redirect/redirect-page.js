@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import ApiService from "../../../services/api-service";
+
+import ApiService from "services/api-service";
 
 import './redirect-page.css';
 
@@ -21,10 +22,10 @@ class RedirectPage extends Component {
         (new ApiService())
             .getLink(this.path)
             .then( response => {
-                const { original_url } = response;
+                const { originalUrl } = response;
 
-                if (original_url) {
-                    window.location.href = original_url;
+                if (originalUrl) {
+                    window.location.href = originalUrl;
                 } else {
                     this.setState({error: true});
                 }

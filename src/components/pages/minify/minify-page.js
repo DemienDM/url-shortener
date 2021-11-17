@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import React, { Component } from "react";
-import { minifyUrl } from "../../../actions";
-import ApiService from "../../../services/api-service";
+
+import { minifyUrl } from "actions";
+import ApiService from "services/api-service";
 
 import './minify-page.css';
 

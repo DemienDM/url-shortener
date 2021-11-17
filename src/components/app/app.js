@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "../header";
-import MinifyPage from "../pages/minify";
-import RedirectPage from "../pages/redirect";
 import { Switch, Route, useLocation } from 'react-router-dom';
+
+import Header from "components/header";
+import MinifyPage from "components/pages/minify";
+import RedirectPage from "components/pages/redirect";
 
 const App = () => {
     return (
